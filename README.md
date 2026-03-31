@@ -117,6 +117,3 @@ Data Scientist | ML Engineer |
 
 ---
 
-## ⭐ Support
-
-Give a ⭐ if you like this project!
