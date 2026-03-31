@@ -1,67 +1,101 @@
 #  SmartCart Customer Segmentation System
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-KMeans-green)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Clustering-green)
 ![Status](https://img.shields.io/badge/Project-Completed-success)
-![Made By](https://img.shields.io/badge/Made%20By-Pratik%20Takale-red)
 
 ---
 
 ##  Project Overview
 
-SmartCart is an e-commerce platform that wants to improve its marketing strategy by understanding customer behavior.
+This project builds a **customer segmentation system** for an e-commerce platform (SmartCart) using **unsupervised machine learning**.
 
-This project uses **Machine Learning (K-Means Clustering)** to segment customers based on:
+The goal is to group customers based on:
 
+* Purchasing behavior
 * Income
-* Spending behavior
+* Engagement
 
 ---
 
 ##  Objective
 
-* Group customers into clusters
-* Identify high-value customers
+* Identify customer segments
 * Improve marketing strategies
-* Enable data-driven decisions
+* Enable data-driven decision making
 
 ---
 
 ##  Dataset
 
 * 2240 customer records
-* Features include:
+* Features:
 
-  * Income
+  * Demographics
   * Purchase behavior
-  * Spending patterns
-  * Customer activity
+  * Website activity
+  * Customer feedback
 
 ---
 
 ##  Tech Stack
 
 * Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
+* Pandas, NumPy
+* Seaborn, Matplotlib
 * Scikit-learn
 
 ---
 
-##  Machine Learning Model
+##  Machine Learning Workflow
 
-* Algorithm: **K-Means Clustering**
-* Technique: **Elbow Method** for optimal clusters
+###  Data Preprocessing
+
+* Missing value handling
+* Feature engineering (Age, Total Spending, Children)
+* Outlier removal
+
+###  Feature Engineering
+
+* Age calculation
+* Total spending aggregation
+* Family size
+
+###  Encoding
+
+* OneHotEncoding for categorical variables
+
+###  Scaling
+
+* StandardScaler applied
+
+###  Dimensionality Reduction
+
+* PCA used for visualization
+
+###  Clustering Algorithms
+
+* K-Means Clustering
+* Agglomerative Clustering
+
+###  Evaluation
+
+* Elbow Method
+* Silhouette Score
+* KneeLocator
 
 ---
 
-##  Output
+##  Results
 
-* Customers divided into clusters
-* Visualized using scatter plots
-* Clear segmentation of customer groups
+* Customers segmented into 4 clusters
+* Clear separation based on income & spending
+
+###  Insights
+
+* High-value customers identified
+* Low engagement users detected
+* Business can target each cluster differently
 
 ---
 
@@ -75,15 +109,14 @@ jupyter notebook
 ```
 
 ---
----
 
-## Key Insights
-
-* Identified high spending customers
-* Found low engagement users
-* Helped improve business targeting
-
-## 👨‍💻 Author
+##  Author
 
 **Pratik Takale**
-Data Scientist | ML Engineer | MERN Developer
+Data Scientist | ML Engineer |
+
+---
+
+## ⭐ Support
+
+Give a ⭐ if you like this project!
